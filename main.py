@@ -2,8 +2,7 @@ from Cov import Cov
 from longestPeriod import longestPeriod as lp
 
 def main():
-    # coverages = [Cov(1, 20), Cov(21, 30), Cov(15, 25), Cov(28, 40), Cov(50, 60), Cov(61, 200)]
-    coverages = [Cov(1,20)]
+    coverages = [Cov(1, 20), Cov(21, 30), Cov(15, 25), Cov(28, 40), Cov(50, 60), Cov(61, 200)]
     time = lp(coverages)
     print(time)
 

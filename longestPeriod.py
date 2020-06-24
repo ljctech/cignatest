@@ -10,7 +10,7 @@ def longestPeriod(coverages):
         start = term.eff
         end = term.term    
         #Set all dates for when there was coverage to 1
-        year[start:end+1] = [1] *(end+1 - start)
+        year[start:end] = [1] *(end - start)
 
     #Find the longest streak in coverages.
     return max(sum(1 for x in v if x == 1) for k,v in groupby(year))
